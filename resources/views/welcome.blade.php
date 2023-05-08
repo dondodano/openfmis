@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"  class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"  class="">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
@@ -182,6 +182,18 @@
                 <x-tailwind.badge badge="indigo">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="purple" size="text-sm">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="pink">Text Here</x-tailwind.badge>
+
+                <br/>
+                <br/>
+
+                <x-tailwind.badge-bordered badge="blue">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="gray">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="red">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="green">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="yellow">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="indigo">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="purple">Bordered</x-tailwind.badge-bordered>
+                <x-tailwind.badge-bordered badge="pink">Bordered</x-tailwind.badge-bordered>
 
             </div>
         </div>

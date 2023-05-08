@@ -30,3 +30,14 @@ on terminal (run)
 
 on reouces/views/welcome.blade.php (copy)
     @vite('resources/css/app.css')
+
+
+# Installation of daisyui
+on terminal (run)
+    npm i daisyui
+
+on tailwind.config.js (copy)
+    module.exports = {
+    //...
+    plugins: [require("daisyui")],
+    }

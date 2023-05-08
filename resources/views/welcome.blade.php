@@ -166,7 +166,7 @@
         <div class="p-4 sm:ml-64">
             <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
 
-                <x-tailwind.alert type="default">
+                <x-tailwind.alert type="green">
                     Yeah
                 </x-tailwind.alert>
 
@@ -174,13 +174,13 @@
                     DT
                 </x-tailwind.avatar>
 
-                <x-tailwind.badge badge="blue">Text Here</x-tailwind.badge>
+                <x-tailwind.badge badge="blue" size="text-sm">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="gray">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="red">Text Here</x-tailwind.badge>
+                <x-tailwind.badge badge="red" size="text-sm">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="green">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="yellow">Text Here</x-tailwind.badge>
+                <x-tailwind.badge badge="yellow" size="text-sm">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="indigo">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="purple">Text Here</x-tailwind.badge>
+                <x-tailwind.badge badge="purple" size="text-sm">Text Here</x-tailwind.badge>
                 <x-tailwind.badge badge="pink">Text Here</x-tailwind.badge>
 
             </div>

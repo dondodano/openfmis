@@ -32,9 +32,10 @@ class Alert extends Component
         $this->title = $title;
         $this->withList = $withList;
 
-        $this->textColor = $this->alertTypes[$type]['fg'];
-        $this->backColor = $this->alertTypes[$type]['bg'];
-        $this->darkColor = $this->alertTypes[$type]['dark'];
+        $this->textColor = $this->alertTypes[$type]['fg'] ?? $this->alertTypes['default']['fg'];
+        $this->backColor = $this->alertTypes[$type]['bg'] ?? $this->alertTypes['default']['bg'];
+        $this->darkColor = $this->alertTypes[$type]['dark'] ?? $this->alertTypes['default']['dark'];
+
     }
 
 

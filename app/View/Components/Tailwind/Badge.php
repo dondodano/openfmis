@@ -23,12 +23,13 @@ public $class = [
     public $badge;
 
 
+    public $size;
 
-
-    public function __construct( $badge = 'blue')
+    public function __construct( $badge = 'blue', $size = 'text-xs')
     {
         $this->badge = $badge;
-        $this->class[$badge];
+        $this->class[$badge] ?? $this->class['blue'];
+        $this->size = $size;
     }
 
 

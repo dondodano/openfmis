@@ -6,17 +6,17 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Avatar extends Component
+class Card extends Component
 {
-    public $isImage;
-    public function __construct($isImage = false)
+
+    public function __construct()
     {
-        $this->isImage = $isImage;
+
     }
 
 
     public function render(): View|Closure|string
     {
-        return view('components.tailwind.avatar');
+        return view('components.tailwind.card');
     }
 }

@@ -14,7 +14,8 @@
 
         @stack('level-0')
     </head>
-    <body>
+    <body class="bg-white dark:bg-gray-900 antialiased ">
+
 
 
         <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -34,35 +35,38 @@
                 </div>
                 <div class="flex items-center">
                     <div class="flex items-center ml-3">
+                        <div class="me-5">
+                            <x-tailwind.dropdown-notification/>
+                        </div>
                         <div>
-                        <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                            <span class="sr-only">Open user menu</span>
-                            <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
-                        </button>
+                            <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                            </button>
                         </div>
                         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
-                        <div class="px-4 py-3" role="none">
-                            <p class="text-sm text-gray-900 dark:text-white" role="none">
-                            Neil Sims
-                            </p>
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                            neil.sims@flowbite.com
-                            </p>
-                        </div>
-                        <ul class="py-1" role="none">
-                            <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Dashboard</a>
-                            </li>
-                            <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</a>
-                            </li>
-                            <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
-                            </li>
-                            <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
-                            </li>
-                        </ul>
+                            <div class="px-4 py-3" role="none">
+                                <p class="text-sm text-gray-900 dark:text-white" role="none">
+                                Neil Sims
+                                </p>
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                                neil.sims@flowbite.com
+                                </p>
+                            </div>
+                            <ul class="py-1" role="none">
+                                <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Dashboard</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     </div>
@@ -164,58 +168,42 @@
         </aside>
 
         <div class="p-4 sm:ml-64">
-            <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+            <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
 
                 <x-tailwind.breadcrumb>
                     <x-tailwind.breadcrumb-item slug="project"/>
                     <x-tailwind.breadcrumb-item slug="flowbite" iscurrent="true"/>
                 </x-tailwind.breadcrumb-item>
 
-                <x-tailwind.alert type="green">
-                    Yeah
-                </x-tailwind.alert>
-
-                <x-tailwind.avatar>
-                    DT
-                </x-tailwind.avatar>
-
-                <x-tailwind.badge badge="blue" size="text-sm">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="gray">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="red" size="text-sm">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="green">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="yellow" size="text-sm">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="indigo">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="purple" size="text-sm">Text Here</x-tailwind.badge>
-                <x-tailwind.badge badge="pink"  size="text-xs" dismissable="true" dismissableId="dismiss-pink">
-                    Click Here
-                </x-tailwind.badge>
+                <x-tailwind.card>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </x-tailwind.card>
 
                 <br/>
                 <br/>
 
-                <x-tailwind.badge-bordered badge="blue">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="gray">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="red">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="green">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="yellow">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="indigo">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="purple">Bordered</x-tailwind.badge-bordered>
-                <x-tailwind.badge-bordered badge="pink" hasicon="true">
-                    <svg aria-hidden="true" class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                    </svg>
-                    3 days ago
-                </x-tailwind.badge-bordered>
+                <!-- drawer tirgger -->
+                <div class="text-center">
+                    <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+                    Show right drawer
+                    </button>
+                </div>
 
                 <br/>
                 <br/>
 
-                <x-tailwind.button color="green">
-                    <svg class="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg>
-                    Button
-                </x-tailwind.button>
             </div>
         </div>
+
+        <!-- drawer -->
+        <x-tailwind.drawer><p>This is Drawer content</p></x-tailwind.drawer>
 
         @stack('level-1')
     </body>

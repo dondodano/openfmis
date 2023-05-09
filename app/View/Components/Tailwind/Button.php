@@ -41,6 +41,7 @@ class Button extends Component
         'purple' => ['text-purple-700', 'hover:text-white', 'border-purple-700', 'hover:bg-purple-800', 'focus:ring-purple-300', 'dark:border-purple-400', 'dark:text-purple-400', 'dark:hover:text-white', 'dark:hover:bg-purple-500', 'dark:focus:ring-purple-900', 'border', 'focus:ring-4', 'focus:outline-none'],
     ];
 
+    public $id;
     public $type;
     public $color;
     public $pilled;
@@ -48,8 +49,10 @@ class Button extends Component
     public $size;
     public $bordered;
 
+    public $attr;
 
-    public function __construct($type='button', $color='default', $pilled = false, $withicon = true, $size = 'base', $bordered = false)
+
+    public function __construct($type='button', $color='default', $pilled = false, $withicon = true, $size = 'base', $bordered = false, $id = null, $attr = null)
     {
         $this->type = $type;
         $this->color = $color;
@@ -57,6 +60,8 @@ class Button extends Component
         $this->withicon = $withicon;
         $this->size = $size;
         $this->bordered = $bordered;
+        $this->id = $id;
+        $this->attr = $attr;
     }
 
 

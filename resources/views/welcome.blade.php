@@ -170,11 +170,13 @@
         <div class="p-4 sm:ml-64">
             <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
 
+                <!-- breadcrumb -->
                 <x-tailwind.breadcrumb>
                     <x-tailwind.breadcrumb-item slug="project"/>
                     <x-tailwind.breadcrumb-item slug="flowbite" iscurrent="true"/>
                 </x-tailwind.breadcrumb-item>
 
+                <!-- card -->
                 <x-tailwind.card>
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
@@ -189,7 +191,7 @@
                 <br/>
                 <br/>
 
-                <!-- drawer tirgger -->
+                <!-- drawer trigger -->
                 <div class="text-center">
                     <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
                     Show right drawer
@@ -199,10 +201,18 @@
                 <br/>
                 <br/>
 
+                    <x-tailwind.dropdown>
+                        <x-tailwind.dropdown-item link="/Edit">Edit</x-tailwind.dropdown-item>
+                    </x-tailwind.dropdown>
+
+                <br/>
+                <br/>
+
+
             </div>
         </div>
 
-        <!-- drawer -->
+        <!-- drawer content-->
         <x-tailwind.drawer><p>This is Drawer content</p></x-tailwind.drawer>
 
         @stack('level-1')

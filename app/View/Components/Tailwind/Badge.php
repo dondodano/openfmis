@@ -23,13 +23,20 @@ public $class = [
     public $badge;
     public $size;
     public $round;
+    public $icononly;
 
-    public function __construct( $badge = 'blue', $size = 'text-xs', $round = false)
+
+    /**
+     * @Badge = Default, Large & Small, Pill, HasIcon
+     */
+    public function __construct( $badge = 'blue', $size = 'text-xs', $round = false, $icononly = false)
     {
         $this->badge = $badge;
         $this->class[$badge] ?? $this->class['blue'];
         $this->size = $size;
         $this->round = $round;
+        $this->icononly = $icononly;
+
     }
 
 

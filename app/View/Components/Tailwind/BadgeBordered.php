@@ -23,13 +23,18 @@ class BadgeBordered extends Component
     public $badge;
     public $size;
     public $round;
+    public $hasicon;
 
-    public function __construct($badge = 'blue', $size = 'text-xs', $round = false)
+    /**
+     * @Badge = Bordered, Large & Small, Pill, HasIcon
+     */
+    public function __construct($badge = 'blue', $size = 'text-xs', $round = false, $hasicon = false)
     {
         $this->badge = $badge;
         $this->class[$badge] ?? $this->class['blue'];
         $this->size = $size;
         $this->round = $round;
+        $this->hasicon = $hasicon;
     }
 
 

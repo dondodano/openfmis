@@ -9,7 +9,7 @@ use Illuminate\View\Component;
 class Badge extends Component
 {
 
-public $class = [
+public $colors = [
         'blue' => ['bg-blue-100', 'text-blue-800', 'dark:bg-blue-900', 'dark:text-blue-300' ],
         'gray' => ['bg-gray-100', 'text-gray-800', 'dark:bg-gray-700', 'dark:text-gray-300' ],
         'red' => ['bg-red-100', 'text-red-800', 'dark:bg-red-900', 'dark:text-red-300' ],
@@ -20,7 +20,7 @@ public $class = [
         'pink' => ['bg-pink-100', 'text-pink-800', 'dark:bg-pink-900', 'dark:text-pink-300' ],
     ];
 
-    public $badge;
+    public $color;
     public $size;
     public $round;
     public $icononly;
@@ -29,10 +29,10 @@ public $class = [
     /**
      * @Badge = Default, Large & Small, Pill, HasIcon
      */
-    public function __construct( $badge = 'blue', $size = 'text-xs', $round = false, $icononly = false)
+    public function __construct( $color = 'blue', $size = 'text-xs', $round = false, $icononly = false)
     {
-        $this->badge = $badge;
-        $this->class[$badge] ?? $this->class['blue'];
+        $this->color = $color;
+        $this->colors[$color] ?? $this->colors['blue'];
         $this->size = $size;
         $this->round = $round;
         $this->icononly = $icononly;
